@@ -37,12 +37,12 @@ Order robots from RobotSpareBin Industries Inc
 
 
 *** Keywords ***
- Open the robot order website
+Open the robot order website
     ${URL}=    Get Url From Local Vault
     Log    ${URL}
     Open Available Browser    ${URL}
 
- Download an Excel file
+Download an Excel file
     # This task executes these three keywords:
     Download    https://robotsparebinindustries.com/orders.csv    overwrite=True
 
